@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "tsc && node dist/index.js",
-    "fmt": "npx prettier --write js"
+    "fmt": "npx prettier --write **/ts/*.{ts,js}"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.3",

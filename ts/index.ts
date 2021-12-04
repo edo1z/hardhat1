@@ -1,1 +1,1 @@
-console.log(123)
+import { ethers } from 'ethers';
