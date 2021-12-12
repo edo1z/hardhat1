@@ -1,6 +1,8 @@
 {
+  "type": "module",
   "scripts": {
     "start": "tsc && node dist/index.js",
+    "nft-storage": "tsc && node dist/storage.mjs",
     "fmt": "npx prettier --write **/ts/*.{ts,js}"
   },
   "devDependencies": {
@@ -17,6 +19,11 @@
     "canoe-solidity": "^0.1.0",
     "dotenv": "^10.0.0",
     "ethereum-input-data-decoder": "^0.3.5",
+    "nft.storage": "^5.1.3",
     "ts-node": "^10.4.0"
-  }
+  },
+  "name": "hardhat1",
+  "version": "1.0.0",
+  "author": "web3ten0",
+  "license": "MIT"
 }

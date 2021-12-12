@@ -8,3 +8,5 @@ dist
 #Hardhat files
 cache
 artifacts
+
+hoge.jpg
