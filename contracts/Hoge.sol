@@ -1,15 +1,16 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract Hoge {
-    event Deposit(address indexed _from, uint256 _value, uint256 _balance);
-
-    receive() external payable {
-        uint256 balance = getContractBalance();
-        emit Deposit(msg.sender, msg.value, balance);
+contract a1 {
+    uint8 x1 = 1;
+    function getX1() external view returns (uint8) {
+        return x1;
     }
+}
 
-    function getContractBalance() public view returns (uint256) {
-        return address(this).balance;
-    }
+contract a2 {
+    uint8 x2 = 2;
+}
+
+contract b is a1, a2 {
 }
