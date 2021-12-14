@@ -20,10 +20,8 @@ const main = async () => {
       image: file,
     });
     const url = new URL(metadata.url);
-    const jsonUrl = `https://${url.hostname}.ipfs.dweb.link${url.pathname}`;
+    const jsonUrl = `https://ipfs.io/ipfs/${url.hostname}${url.pathname}`;
     console.log(jsonUrl);
-    console.log("---------");
-    console.log(metadata.url);
   } catch (err) {
     console.log(err);
   }

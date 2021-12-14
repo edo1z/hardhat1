@@ -31,12 +31,6 @@ const config: HardhatUserConfig = {
         ? [process.env.PRIVATE_KEY_MATIC_TEST]
         : [""],
     },
-    matic: {
-      url: process.env.MATIC_URL,
-      accounts: process.env.PRIVATE_KEY_MATIC
-        ? [process.env.PRIVATE_KEY_MATIC]
-        : [""],
-    },
   },
 };
 

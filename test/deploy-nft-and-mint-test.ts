@@ -13,7 +13,6 @@ describe("NftStorage", function () {
     const addr = process.env.MINT_ADDRESS ? process.env.MINT_ADDRESS : "";
     const tokenURI = process.env.METADATA_URI ? process.env.METADATA_URI : "";
     const mintTx = await nft.mint(addr, tokenURI);
-    console.log("mint tx:", mintTx);
     await mintTx.wait();
 
     expect(await nft.ownerOf(1)).to.equal(addr);
